@@ -1,0 +1,87 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1</title>
+
+</head>
+
+<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+var x = 1
+$(document).ready(function(){
+  $("#hint1").click(function(){
+    $("div#showme").toggle();
+  });
+});
+</script>
+
+
+<body>
+
+    <progress value="%s" max="100"></progress> % 20
+    <div name="first part">1. What is the name of the charts below?
+        <br>
+        <img name="line graph" src='shilinalucyrena1.appspot.com/images/20180802Task1_Line graph.png' width="300" height="270">
+        <br>
+        <input name="name of chart">
+        <p id ="hint1" onclick="function">点击下方显示/隐藏答案</p>
+        <div id="showme"  style="display:none">
+        <p>line graph</p>
+        </div>
+
+        <br>
+
+        <hr>
+        <br>
+        <img name="bar chart" src='/home/renashi2012/20180908Task1_bar chart.png' width="300" height="270">
+        <br>
+        <input name="name of chart">
+        <p id ="hint2" onclick="function">点击下方显示/隐藏答案</p>
+        <div id="showme"  style="display:none">
+        <p>bar chart</p>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <img name="pie chart" src='images/20180728Task1_bar chart.png' width="300" height="270">
+        <br>
+        <input name="name of chart">
+        <p id ="hint3" onclick="function">点击下方显示/隐藏答案</p>
+        <div id="showme"  style="display:none">
+        <p>pie chart</p>
+      </div>
+        <br>
+        <hr>
+        <br>
+        <img name="map" src='images/20180818Task1_map.png' width="300" height="270">
+        <br>
+        <input name="name of chart">
+        <p id ="hint4" onclick="function">点击下方显示/隐藏答案</p>
+        <div id="showme"  style="display:none">
+        <p>map</p>
+      </div>
+        <hr>
+        <br>
+        <img name="flow chart" src='images/20180721Task1_flow chart.png' width="300" height="270">
+        <br>
+        <input name="name of chart">
+        <button type="submit">提交</button>
+        <div id="showme"  style="display:none">
+        <p>flow chart</p>
+        <div>
+
+        <p>
+          <hr>
+        <input type="submit">
+
+    </div>
+</body>
+</html>
+
+{% endblock %}
