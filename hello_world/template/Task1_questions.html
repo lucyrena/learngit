@@ -23,11 +23,22 @@ $(document).ready(function(){
 
 
 <body>
+<div class="main-content" style="width: 600px;
+    padding: 20px 20px 20px 20px;
+    border: 1px solid #dddddd;
+    border-radius:25px;
+    margin: 30px auto 0 auto;
+    background: #f1f1f1;
+    -webkit-box-shadow: 0 0 22px 0 rgba(50, 50, 50, 1);
+    -moz-box-shadow:    0 0 22px 0 rgba(50, 50, 50, 1);
+    box-shadow:         0 0 22px 0 rgba(50, 50, 50, 1);">
+    <progress value="20" max="100"></progress>
+<form class="student_answers" action="index.html" method="post">
 
-    <progress value="%s" max="100"></progress> % 20
+
     <div name="first part">1. What is the name of the charts below?
         <br>
-        <img name="line graph" src='https://storage.googleapis.com/shilinalucyrena1.appspot.com/images/20180802Task1_Line%20graph.png' width="300" height="270">
+        <img name="line graph" src='https://storage.googleapis.com/shilinalucyrena1.appspot.com/images/20180802Task1_Line%20graph.png' width="300">
         <br>
         <input name="name of chart">
         <p id ="hint1" onclick="function">点击下方显示/隐藏答案</p>
@@ -39,7 +50,7 @@ $(document).ready(function(){
 
         <hr>
         <br>
-        <img name="pie chart" src='https://storage.googleapis.com/shilinalucyrena1.appspot.com/images/20180908Task1_bar%20chart.png' width="300" height="270">
+        <img name="pie chart" src='https://storage.googleapis.com/shilinalucyrena1.appspot.com/images/20180908Task1_bar%20chart.png' width="300">
         <br>
         <input name="name of chart">
         <p id ="hint2" onclick="function">点击下方显示/隐藏答案</p>
@@ -49,7 +60,7 @@ $(document).ready(function(){
         <br>
         <hr>
         <br>
-        <img name="bar chart" src='https://storage.googleapis.com/shilinalucyrena1.appspot.com/images/20180908Task1_bar%20chart.png' width="300" height="270">
+        <img name="bar chart" src='https://storage.googleapis.com/shilinalucyrena1.appspot.com/images/20180728Task1_bar%20chart.png' width="300">
         <br>
         <input name="name of chart">
         <p id ="hint3" onclick="function">点击下方显示/隐藏答案</p>
@@ -59,7 +70,7 @@ $(document).ready(function(){
         <br>
         <hr>
         <br>
-        <img name="map" src='https://storage.googleapis.com/shilinalucyrena1.appspot.com/images/20180818Task1_map.png' width="300" height="270">
+        <img name="map" src='https://storage.googleapis.com/shilinalucyrena1.appspot.com/images/20180818Task1_map.png' width="300">
         <br>
         <input name="name of chart">
         <p id ="hint4" onclick="function">点击下方显示/隐藏答案</p>
@@ -68,19 +79,21 @@ $(document).ready(function(){
       </div>
         <hr>
         <br>
-        <img name="flow chart" src='https://storage.googleapis.com/shilinalucyrena1.appspot.com/images/20180721Task1_flow%20chart.png' width="300" height="270">
+        <img name="flow chart" src='https://storage.googleapis.com/shilinalucyrena1.appspot.com/images/20180721Task1_flow%20chart.png' width="300">
         <br>
         <input name="name of chart">
         <button type="submit">提交</button>
         <div id="showme"  style="display:none">
         <p>flow chart</p>
-        <div>
+      </div>
 
         <p>
           <hr>
         <input type="submit">
 
     </div>
+</form>
+</div>
 </body>
 </html>
 

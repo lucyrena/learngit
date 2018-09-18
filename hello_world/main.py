@@ -32,22 +32,6 @@ class Handler(webapp2.RequestHandler):
     def render(self, template, **kw):
         self.write(self.render_str(template, **kw))
 
-
-# form = """
-# <form method = "post">
-#     <label>
-#         <b>Enter some text to ROT13:<b>
-#     <br>
-#     </label>
-#
-#     <br>
-#     <textarea name="text" style="height:100px;width:400px">%s</textarea>
-#     <br>
-#     <input type="submit">
-# </form>
-#
-# """
-
 class MainPage(Handler):
  #   def write_form(self, text=""):
   #      self.response.write(form % {"text": text})

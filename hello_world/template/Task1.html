@@ -1,6 +1,28 @@
 {% extends "base.html" %}
 
+
 {% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1</title>
+
+</head>
+
+<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+var x = 1
+$(document).ready(function(){
+  $("#hint1, #hint2").click(function(){
+    $("div#showme").toggle();
+  });
+});
+</script>
+
+
 <script type="text/javascript" language="javascript">
 function sAlert(str){
 var msgw,msgh,bordercolor;
@@ -95,7 +117,16 @@ document.getElementById("msgDiv").appendChild(button);//在提示框div中添加
 </script>
 
 
-<div style="width:30%; height:800px; border:1px red solid;float:left;margin-left:60px">
+<div style="width:30%; height:800px;
+    padding: 20px 20px 20px 20px;
+    border: 1px solid #dddddd;
+    border-radius:25px;
+    margin: 30px auto 0 auto;
+    background: #f1f1f1;
+    -webkit-box-shadow: 0 0 22px 0 rgba(50, 50, 50, 1);
+    -moz-box-shadow:    0 0 22px 0 rgba(50, 50, 50, 1);
+    box-shadow:         0 0 22px 0 rgba(50, 50, 50, 1);
+    float:left;margin-left:60px">
 
   <div>
     <h1>Writing Task 1</h1>
@@ -126,33 +157,104 @@ document.getElementById("msgDiv").appendChild(button);//在提示框div中添加
   <div>
     Comparison and Contrast
   </div>
-</div>
 
-<div style="width:50%; margin:left;height:800px;border:1px red solid;float:left;margin-left:5%;">
+
   <div>
     <h2>vocabulary</h2>
     <br><button type="button" onclick="sAlert(&quot;wait for questions&quot;)">Practice</button>
   </div>
-  <hr>
+<hr>
   <div>
     <h2>collocations</h2>
     <br><button href="javascript:void(0);" onclick="sAlert(&quot;wait for questions&quot;)">Practice</button>
   </div>
-  <hr>
+<hr>
   <div>
     <h2>phrases</h2>
     <br><button href="javascript:void(0);" onclick="sAlert(&quot;wait for questions&quot;)">Practice</button>
   </div>
-  <hr>
+<hr>
   <div>
     <h2>short sentences</h2>
-    <br><button href="javascript:void(0);" onclick="sAlert(&quot;wait for questions&quot;)">Practice</button>
+  <div><button href="javascript:void(0);" onclick="sAlert(&quot;wait for questions&quot;)">Practice</button></div>
   </div>
-  <hr>
+<hr>
   <div>
     <h2>sentences</h2>
     <br><button href="javascript:void(0);" onclick="sAlert(&quot;wait for questions&quot;)">Practice</button>
   </div>
   <hr>
+
 </div>
+
+  <div style="width:55%; float:right;
+    padding: 20px 20px 20px 20px;
+    border: 1px solid #dddddd;
+    border-radius:25px;
+    margin: 30px 30px 0 auto;
+    background: #f1f1f1;
+    -webkit-box-shadow: 0 0 22px 0 rgba(50, 50, 50, 1);
+    -moz-box-shadow:    0 0 22px 0 rgba(50, 50, 50, 1);
+    box-shadow:         0 0 22px 0 rgba(50, 50, 50, 1);">
+    <form class="student_answers" action="/Task1_questions.html" method="post">
+
+
+        <div class="first_part">1. What is the name of the charts below?
+            <br>
+            <img name="line graph" src='https://storage.googleapis.com/shilinalucyrena1.appspot.com/images/20180802Task1_Line%20graph.png' width="300">
+            <br>
+            <input name="name of chart">
+            <p id ="hint1" onclick="function">点击这里显示/隐藏全部答案</p>
+            <div id="showme"  style="display:none">
+              <p>line graph</p>
+            </div>
+
+            <br>
+
+            <hr>
+            <br>
+            <img name="pie chart" src='https://storage.googleapis.com/shilinalucyrena1.appspot.com/images/20180908Task1_bar%20chart.png' width="300">
+            <br>
+            <input name="name of chart">
+            <p id ="hint2" onclick="function">点击这里显示/隐藏全部答案</p>
+            <div id="showme"  style="display:none">
+            <p>pie chart</p>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <img name="bar chart" src='https://storage.googleapis.com/shilinalucyrena1.appspot.com/images/20180728Task1_bar%20chart.png' width="300">
+            <br>
+            <input name="name of chart">
+            <p id ="hint3" onclick="function">点击这里显示/隐藏全部答案</p>
+            <div id="showme"  style="display:none">
+            <p>bar chart</p>
+          </div>
+            <br>
+            <hr>
+            <br>
+            <img name="map" src='https://storage.googleapis.com/shilinalucyrena1.appspot.com/images/20180818Task1_map.png' width="300">
+            <br>
+            <input name="name of chart">
+            <p id ="hint4" onclick="function">点击这里显示/隐藏全部答案</p>
+            <div id="showme"  style="display:none">
+            <p>map</p>
+          </div>
+            <hr>
+            <br>
+            <img name="flow chart" src='https://storage.googleapis.com/shilinalucyrena1.appspot.com/images/20180721Task1_flow%20chart.png' width="300">
+            <br>
+            <input name="name of chart">
+            <p id ="hint5" onclick="function">点击这里显示/隐藏全部答案</p>
+            <div id="showme"  style="display:none">
+            <p>flow chart</p>
+          </div>
+          <button type="submit">提交</button>
+            <p>
+              <hr>
+            <input type="submit">
+
+        </div>
+    </form>
+    </div>
 {% endblock %}
